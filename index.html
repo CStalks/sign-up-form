@@ -19,24 +19,48 @@
                    <p>You know you want to.</p>
                </div>
                <div>
-                   <p>Let's do this!</p>
-                   <label for="first-name">FIRST NAME</label>
-                   <input type="text" id="first-name" name="first-name"/>
-                   <label for="last-name">LAST NAME</label>
-                   <input type="text" id="last-name" name="last-name"/>
-                   <label for="email">EMAIL</label>
-                   <input type="email" id="email" name="email"/>
-                   <label for="number">PHONE NUMBER</label>
-                   <input type="tel" id="number" name="phone-number"/>
-                   <label for="password1">PASSWORD</label>
-                   <input type="password" id="password1" name="password"/>
-                   <label for="password2">CONFIRM PASSWORD</label>
-                   <input type="password" id="password2" name="confirm-password"/>
-               </div>
-               <div>
-                   <button type="button">Create Account</button>
-                   <p>Already have an account? <span>Log in</span></p>
-               </div>
+                    <p>Let's do this!</p>
+                    <div class="data-section">
+                        <div>
+                            <div class="data-field">
+                                <div class="label-txt"><label for="first-name">FIRST NAME</label></div>
+                                <input type="text" id="first-name" name="first-name"/>
+                            </div>
+                            <div class="data-field">
+                                <div><label for="email">EMAIL</label></div>
+                                <input type="email" id="email" name="email"/>
+                            </div>
+                            <div class="data-field">
+                                <div><label for="password1">PASSWORD</label></div>
+                                <input type="password" id="password1" name="password" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="data-field">
+                                <div><label for="last-name">LAST NAME</label></div>
+                                <input type="text" id="last-name" name="last-name"/>
+                            </div>
+                            <div class="data-field">
+                                <div><label for="number">PHONE NUMBER</label></div>
+                                <input type="tel" id="number" name="phone-number"/>
+                            </div>
+                            <div class="data-field">
+                                <div><label for="password2">CONFIRM PASSWORD</label></div>
+                                <input type="password" id="password2" name="confirm-password" required/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div>
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <span>Log in</span></p>
+                    </div>
+
+                  
+             
+              
+         
            </form>
        </div>
    </body>
