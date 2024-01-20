@@ -9,43 +9,41 @@ body {
    margin: 0;
    padding: 0;
    font-family: Arial, Helvetica, sans-serif;
+   flex-wrap: wrap;
 }
 
 .left-container {
    flex: 1;
-   width: 25vh;
-   height: 100vh;
-   background-color: antiquewhite;
-   overflow:clip;
+   overflow: clip;
    position: relative;
 }
- 
-.positon-container:first-child {
-   width: 100%;
+
+.position-container {
+   display: flex;
    height: 100%;
-   position: static;
 }
  
 .right-container {
    flex: 2;
-   width: 75vh;
-   height: 100vh; 
    background-color: #f8f8f8;
 }
 
 form {
    display: flex;
    flex-direction: column;
-   height: 100%;
 }
 
 .data-section {
    display: flex;
    gap: 90px;
+   flex-wrap: wrap;
 }
 
 .data-field {
    margin-bottom: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 input {
@@ -54,10 +52,11 @@ input {
 }
 
 .msg {
-   width: 600px;
+   width: 60%;
    font-weight: bold;
    font-size: 20px;
    margin-top: 60px;
+   flex-shrink: 1;
 }
 
 button {
@@ -113,11 +112,9 @@ button {
    position: absolute;
    top: 8rem;
    font-size: 80px;
-   background-color: black;
+   background-color: rgb(0, 0, 0, 0.5);
    width: 100%;
-   color: rgb(255, 255, 255);
    font-weight: bold;
-   opacity: 0.6;
    display: flex;
    justify-content: center;
    padding: 10px;
@@ -131,4 +128,5 @@ button {
 .logo > div {
    display: flex;
    align-items: end;
+   color: rgb(255, 255, 255, 1);
 }
